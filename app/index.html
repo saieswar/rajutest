@@ -1,0 +1,363 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Material Design for Bootstrap fonts and icons -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+    crossorigin="anonymous">
+  <!-- Material Design for Bootstrap CSS -->
+  <link rel="stylesheet" href="css/bootstrap-material-design.min.css">
+  <link rel="stylesheet" href="css/custom-app.css">
+
+
+  <title>Dashboard</title>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <a class="navbar-brand" href="#">
+      <i class="fa fa-bars"></i>
+      <!-- <img src="/bootstrap-material-design/assets/brand/bootstrap-solid.svg" width="30" height="30" class="d-inline-block align-top" alt=""> -->
+      Hello Mark Miller!
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav my-0 my-lg-0 ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#"><i class="fa fa-user fa-2x"></i></a>
+            </li>
+            
+          </ul>
+      <form class="form-inline my-0 my-lg-0" role="search">
+        <div class="form-group">
+          <input class="  " placeholder="Search" name='q' onblur='if(this.value==&apos;&apos;)this.value=this.defaultValue;'
+            onfocus='if(this.value==this.defaultValue)this.value=&apos;&apos;' type='text' value='Change user in context' />
+        </div>
+      </form>
+      
+    </div>
+  </nav>
+
+  <div class="container-fluid">
+    <div class="row py-3">
+      <div class="col-sm-8">
+        <div class="card">
+          <div class="card-header bg-primary text-light font-weight-bold">
+            Featured
+          </div>
+          <div class="card-body p-0">
+            <ul class="nav nav-tabs custom-nav-tabs justify-content-around text-center">
+              <li class="nav-item">
+                <a class="nav-link active" href="#">Account Open <small class="text-muted">12 / 13</small></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Personal Loan <small class="text-muted">10 / 11</small></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Mortgage <small class="text-muted">0 / 0</small></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Client Update <small class="text-muted">0 / 2</small></a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="#">All <small class="text-muted">22 / 50</small></a>
+              </li>
+            </ul>
+            <div class="p-3">
+              <div class="row row-titels text-center">
+                <div class="col-sm-1">
+
+                </div>
+                <div class="col-sm">
+                  <small>Title</small>
+                </div>
+                <div class="col-sm">
+                  <small>Created At</small>
+                </div>
+                <div class="col-sm">
+                  <small>All</small>
+                </div>
+              </div>
+
+              <div class="row align-items-center  mb-2 user-rows">
+                <div class="col-sm-1">
+                  <img class="dollor-icon" src="images/doller.png" alt="">
+                </div>
+                <div class="col-sm cursor-pointer" data-toggle="modal" data-target="#item-details-modal">
+                  Savings Account
+                  <small class="text-muted">Mark Miller -</small>
+                </div>
+                <div class="col-sm text-center">
+                  <small class="text-muted">2018-04-16 10:30</small>
+                </div>
+                <div class="col-sm">
+                  <div class="progress" style="height: 20px;">
+                    <div class="progress-bar bg-danger" role="progressbar" style="width: 25%;" aria-valuenow="25"
+                      aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                </div>
+
+              </div>
+
+              <div class="row align-items-center  mb-2 user-rows">
+                <div class="col-sm-1">
+                  <img class="dollor-icon" src="images/doller.png" alt="">
+                </div>
+                <div class="col-sm cursor-pointer" data-toggle="modal" data-target="#item-details-modal">
+                  Savings Account
+                  <small class="text-muted">Mark Miller -</small>
+                </div>
+                <div class="col-sm text-center">
+                  <small class="text-muted">2018-04-16 10:30</small>
+                </div>
+                <div class="col-sm">
+                  <div class="progress" style="height: 20px;">
+                    <div class="progress-bar bg-info" role="progressbar" style="width: 65%;" aria-valuenow="25"
+                      aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                </div>
+
+              </div>
+
+              <div class="row align-items-center  mb-2 user-rows">
+                <div class="col-sm-1">
+                  <img class="dollor-icon" src="images/doller.png" alt="">
+                </div>
+                <div class="col-sm cursor-pointer" data-toggle="modal" data-target="#item-details-modal">
+                  Investment Account
+                  <small class="text-muted">Mark Miller -</small>
+                </div>
+                <div class="col-sm text-center">
+                  <small class="text-muted">2018-04-20 10:30</small>
+                </div>
+                <div class="col-sm">
+                  <div class="progress" style="height: 20px;">
+                    <div class="progress-bar bg-success" role="progressbar" style="width: 90%;" aria-valuenow="25"
+                      aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                </div>
+
+              </div>
+
+
+              <div class="row align-items-center  mb-2 user-rows">
+                <div class="col-sm-1">
+                  <img class="dollor-icon" src="images/doller.png" alt="">
+                </div>
+                <div class="col-sm cursor-pointer" data-toggle="modal" data-target="#item-details-modal">
+                  Current Account
+                  <small class="text-muted">Mark Miller -</small>
+                </div>
+                <div class="col-sm text-center">
+                  <small class="text-muted">2018-04-16 10:30</small>
+                </div>
+                <div class="col-sm">
+                  <div class="progress" style="height: 20px;">
+                    <div class="progress-bar bg-danger" role="progressbar" style="width: 15%;" aria-valuenow="15"
+                      aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+          <div class="ml-auto p-2 btn-plus">
+            <button type="button" class="btn bg-light bmd-btn-fab" data-toggle="modal" data-target="#exampleModalLong">
+              <i class="fa fa-plus"></i>
+            </button>
+          </div>
+
+          <div class="card-footer bg-primary text-light">
+            Total: 50
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-4 p-2">
+        <div id="workqueue-items"></div>
+
+        <div id="workqueue-items2"></div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- item details modal -->
+  <div id="item-details-modal" class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog mx-3 custom-xl-modal">
+      <div class="modal-content">
+        <div class="modal-header bg-primary p-2">
+          <h5 class="modal-title text-light" id="exampleModalLongTitle">Create Item</h5>
+          <button type="button" class="close text-light" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="offset-md-3">
+                  <h5>Please fill all the Required information</h5>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-3">
+                <div class="row">
+                  <dt class="col-sm-6">Type</dt>
+                  <dl class="col-sm-6">Account Opne</dl>
+                </div>
+
+                <div class="row">
+                  <dt class="col-sm-6">Owner</dt>
+                  <dl class="col-sm-6">Mark Miller</dl>
+                </div>
+
+                <div class="row">
+                  <dt class="col-sm-6">Created At</dt>
+                  <dl class="col-sm-6">2018-05-01</dl>
+                </div>
+                <div class="row">
+                  <dt class="col-sm-6">Updated At</dt>
+                  <dl class="col-sm-6">2018-05-01</dl>
+                </div>
+
+
+              </div>
+              <div class="col-md-6">
+                
+                <form>
+                  <div class="form-group">
+                    <label for="title" class="bmd-label-floating">Title</label>
+                    <input type="text" class="form-control" id="title">
+                  </div>
+                  <div class="form-group">
+                    <label for="description" class="bmd-label-floating">Description</label>
+                    <textarea class="form-control" id="exampleTextarea" rows="6"></textarea>
+                  </div>
+
+                  <div class="slidecontainer">
+                    <p>Completion:</p>
+                    <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+                  </div>
+                </form>
+              </div>
+            </div>
+
+          </div>
+          <p class="text-right font-weight-light text-muted font-italic">Once this item is saved it will become
+            available in the workque.</p>
+        </div>
+        <div class="modal-footer">
+
+          <button type="button" class="btn btn-raised btn-danger mr-auto" data-toggle="modal" data-target="#confirmation">Delete</button>
+          <button type="button" class="btn btn-raised btn-link" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-raised btn-primary" data-dismiss="modal" aria-label="Close">Save</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- Item form html -->
+  <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header bg-primary p-2">
+          <h5 class="modal-title text-light" id="exampleModalLongTitle">Create Item</h5>
+          <button type="button" class="close text-light" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-group">
+              <label for="exampleSelect1" class="bmd-label-floating">Select Type</label>
+              <select class="form-control" id="exampleSelect1">
+                <option>Select Type</option>
+                <option>Basic</option>
+                <option>High</option>
+                <option>Low</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="title" class="bmd-label-floating">Title</label>
+              <input type="text" class="form-control" id="title">
+              <span class="bmd-help">We'll never share your email with anyone else.</span>
+            </div>
+            <div class="form-group">
+              <label for="description" class="bmd-label-floating">Description</label>
+              <textarea class="form-control" id="exampleTextarea" rows="3"></textarea>
+            </div>
+            <div class="form-group">
+              <label for="exampleSelect1" class="bmd-label-floating">Owner</label>
+              <select class="form-control" id="exampleSelect1">
+                <option>Select Owner</option>
+                <option>Krish</option>
+                <option>Jhon</option>
+                <option>Don</option>
+              </select>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-raised btn-link" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-raised btn-primary" data-dismiss="modal" aria-label="Close">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Confirmation Modal -->
+  <div class="modal fade" id="confirmation" tabindex="-1" role="dialog" aria-labelledby="confirmationModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header bg-primary p-2">
+          <h5 class="modal-title text-light" id="confirmationModalLabel">Warning</h5>
+          <button type="button" class="close text-light" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body text-center p-3">
+         <h4>Are you sure you want to delete this item?</h4>
+         <p>After an item is deleted it connot be recovered.</p>
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-primary mr-auto" data-dismiss="modal" aria-label="Close">Delete</button>
+            
+            <button type="button" class="btn btn-primary" data-dismiss="modal" aria-label="Close">Save</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/popper.js@1.12.6/dist/umd/popper.js" integrity="sha384-fA23ZRQ3G/J53mElWqVJEGJzU0sTs+SvzG8fXVWP+kJQ1lwFAOkcUOysnlKJC33U"
+    crossorigin="anonymous"></script>
+  <script src="js/bootstrap-material-design.js"></script>
+  <script>
+    $(document).ready(function () {
+      $('body').bootstrapMaterialDesign();
+    });
+  </script>
+
+  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+  <script type="text/javascript" src="js/custom.js"></script>
+</body>
+
+</html>
