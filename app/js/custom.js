@@ -55,6 +55,7 @@ function setDropdDownList(keyword){
   // $("#search-results").addClass('show');
   $("#search-results").empty();
   var options = users.filter(function(user){
+    // filter the list if keyword present
     if(keyword){
       return user.name.toLowerCase().search(keyword.toLowerCase()) != -1
     }else{
@@ -62,11 +63,18 @@ function setDropdDownList(keyword){
     }
     
   }).map(function(user) {
-    return '<a class="dropdown-item" href="#" data-user-id="'+user.id+'" onclick="selectUser($event)">'+user.name+'</a>'
+    let child = document.createElement('a');
+    child.className = 'dropdown-item cursor-pointer'; // Class name
+    child.innerHTML = user.name; // Text inside
+    $('#search-results').append(child); // Append it
+    child.onclick = selectUser; // Attach the event!
+
+    // return '<a class="dropdown-item" data-user-id="'+user.id+'" onclick="selectUser($event)">'+user.name+'</a>'
   });
 
-  $("#search-results").append(options);
+  // $("#search-results").append(options);
 };
+
 // set drop down list on page load
 setDropdDownList();
 
@@ -75,12 +83,15 @@ function selectUser(user) {
   console.log(user)
 }
 
+// on user select
+$("#search-results").on("click", "a", function(){
+  alert($(this).text());
+});
 
 // on search value change 
 $("#search-input").bind("keyup", function(e) {
   console.log(e.target.value);
   setDropdDownList(e.target.value);
-
 })
 
 // on search focus display the drop down list
