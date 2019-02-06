@@ -34,19 +34,25 @@
     </button>
 
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav my-0 my-lg-0 ml-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="#"><i class="fa fa-user fa-2x"></i></a>
-            </li>
-            
-          </ul>
+      <ul class="navbar-nav my-0 my-lg-0 ml-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#"><i class="fa fa-user fa-2x"></i></a>
+        </li>
+
+      </ul>
+
       <form class="form-inline my-0 my-lg-0" role="search">
-        <div class="form-group">
-          <input class="  " placeholder="Search" name='q' onblur='if(this.value==&apos;&apos;)this.value=this.defaultValue;'
-            onfocus='if(this.value==this.defaultValue)this.value=&apos;&apos;' type='text' value='Change user in context' />
+        <div class="dropdown">
+          <input type="text" placeholder="Change user in context" id="search-input">
+          <div id="search-results" class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="#">Action</a>
+            <a class="dropdown-item" href="#">Another action</a>
+            <a class="dropdown-item" href="#">Something else here</a>
+          </div>
         </div>
       </form>
-      
+
+
     </div>
   </nav>
 
@@ -210,7 +216,7 @@
           <div class="container-fluid">
             <div class="row">
               <div class="offset-md-3">
-                  <h5>Please fill all the Required information</h5>
+                <h5>Please fill all the Required information</h5>
               </div>
             </div>
             <div class="row">
@@ -237,7 +243,7 @@
 
               </div>
               <div class="col-md-6">
-                
+
                 <form>
                   <div class="form-group">
                     <label for="title" class="bmd-label-floating">Title</label>
@@ -322,9 +328,10 @@
       </div>
     </div>
   </div>
-  
+
   <!-- Confirmation Modal -->
-  <div class="modal fade" id="confirmation" tabindex="-1" role="dialog" aria-labelledby="confirmationModalLabel" aria-hidden="true">
+  <div class="modal fade" id="confirmation" tabindex="-1" role="dialog" aria-labelledby="confirmationModalLabel"
+    aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered" role="document">
       <div class="modal-content">
         <div class="modal-header bg-primary p-2">
@@ -334,13 +341,13 @@
           </button>
         </div>
         <div class="modal-body text-center p-3">
-         <h4>Are you sure you want to delete this item?</h4>
-         <p>After an item is deleted it connot be recovered.</p>
+          <h4>Are you sure you want to delete this item?</h4>
+          <p>After an item is deleted it connot be recovered.</p>
         </div>
         <div class="modal-footer">
-            <button type="button" class="btn btn-primary mr-auto" data-dismiss="modal" aria-label="Close">Delete</button>
-            
-            <button type="button" class="btn btn-primary" data-dismiss="modal" aria-label="Close">Save</button>
+          <button type="button" class="btn btn-primary mr-auto" data-dismiss="modal" aria-label="Close">Delete</button>
+
+          <button type="button" class="btn btn-primary" data-dismiss="modal" aria-label="Close">Save</button>
         </div>
       </div>
     </div>
